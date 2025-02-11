@@ -6,7 +6,7 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/Sukanya992/auto-trigger.git'
             }
         }
-        stage('Build') {
+        stage('Build application') {
             steps {
                 sh 'echo "Building Application..."'
             }
