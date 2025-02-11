@@ -9,13 +9,11 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'echo "Building Application..."'
-                sh 'docker build -t myapp .'
             }
         }
         stage('Deploy') {
             steps {
                 sh 'echo "Deploying Application..."'
-                sh 'docker-compose up -d'
             }
         }
     }
